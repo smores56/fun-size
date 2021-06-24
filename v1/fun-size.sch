@@ -537,13 +537,13 @@ Connection ~ 2050 3500
 Wire Wire Line
 	3450 4100 3650 4100
 Connection ~ 3650 4100
-Text GLabel 7600 2450 0    50   Input ~ 0
+Text GLabel 7600 2250 0    50   Input ~ 0
 ROW_L_1
-Text GLabel 7600 2550 0    50   Input ~ 0
+Text GLabel 7600 2350 0    50   Input ~ 0
 ROW_L_2
-Text GLabel 7600 2650 0    50   Input ~ 0
+Text GLabel 7600 2450 0    50   Input ~ 0
 ROW_L_3
-Text GLabel 7600 2750 0    50   Input ~ 0
+Text GLabel 7600 2550 0    50   Input ~ 0
 ROW_L_4
 $Comp
 L power:GND #PWR03
@@ -590,14 +590,12 @@ Wire Wire Line
 Wire Wire Line
 	7600 2550 7800 2550
 Wire Wire Line
-	7600 2650 7800 2650
-Wire Wire Line
 	7600 2750 7800 2750
 Wire Wire Line
 	9400 2150 9200 2150
 Wire Wire Line
 	9400 1950 9200 1950
-Text GLabel 9400 2550 2    50   Input ~ 0
+Text GLabel 9400 2450 2    50   Input ~ 0
 COL_L_3
 Wire Wire Line
 	9200 2750 9400 2750
@@ -735,11 +733,7 @@ F 3 "" H 6750 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 7800 1850
-NoConn ~ 7800 2250
-NoConn ~ 7800 2350
 NoConn ~ 9200 1850
-NoConn ~ 9200 2250
-NoConn ~ 9200 2850
 NoConn ~ 6450 2275
 $Comp
 L kbd:ProMicro U2
@@ -1210,9 +1204,9 @@ Connection ~ 2050 6500
 Wire Wire Line
 	3450 7100 3650 7100
 Connection ~ 3650 7100
-Text GLabel 7600 5650 0    50   Input ~ 0
+Text GLabel 9400 5450 2    50   Input ~ 0
 ROW_R_3
-Text GLabel 7600 5750 0    50   Input ~ 0
+Text GLabel 9400 5550 2    50   Input ~ 0
 ROW_R_4
 Wire Wire Line
 	7800 5050 7600 5050
@@ -1223,27 +1217,21 @@ Wire Wire Line
 Wire Wire Line
 	7600 5450 7800 5450
 Wire Wire Line
-	7600 5550 7800 5550
-Wire Wire Line
-	7600 5650 7800 5650
-Wire Wire Line
-	7600 5750 7800 5750
-Wire Wire Line
 	9400 5150 9200 5150
 Wire Wire Line
 	9400 4950 9200 4950
-Text GLabel 9400 5350 2    50   Input ~ 0
+Text GLabel 7600 5650 0    50   Input ~ 0
 COL_R_5
-Text GLabel 9400 5450 2    50   Input ~ 0
+Text GLabel 7600 5550 0    50   Input ~ 0
 COL_R_4
-Text GLabel 9400 5550 2    50   Input ~ 0
+Text GLabel 7600 5450 0    50   Input ~ 0
 COL_R_3
-Text GLabel 9400 5650 2    50   Input ~ 0
+Text GLabel 7600 5350 0    50   Input ~ 0
 COL_R_2
-Text GLabel 9400 5750 2    50   Input ~ 0
+Text GLabel 7600 5250 0    50   Input ~ 0
 COL_R_1
 Wire Wire Line
-	9200 5750 9400 5750
+	9200 5850 9400 5850
 Wire Wire Line
 	9200 5350 9400 5350
 Wire Wire Line
@@ -1251,7 +1239,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 5550 9400 5550
 Wire Wire Line
-	9200 5650 9400 5650
+	9200 5750 9400 5750
 Text GLabel 6050 4750 0    50   Input ~ 0
 RESET_R
 Wire Wire Line
@@ -1299,11 +1287,7 @@ DATA_R
 Wire Wire Line
 	7600 4950 7800 4950
 NoConn ~ 7800 4850
-NoConn ~ 7800 5250
-NoConn ~ 7800 5350
 NoConn ~ 9200 4850
-NoConn ~ 9200 5250
-NoConn ~ 9200 5850
 NoConn ~ 6450 5275
 $Comp
 L kbd:SW_PUSH SW20
@@ -1462,44 +1446,44 @@ F 3 "" H 9400 5150 50  0001 C CNN
 $EndComp
 Text GLabel 9400 5050 2    50   Input ~ 0
 RESET_R
-Text GLabel 7600 5550 0    50   Input ~ 0
+Text GLabel 9400 5350 2    50   Input ~ 0
 ROW_R_2
-Text GLabel 7600 5450 0    50   Input ~ 0
+Text GLabel 9400 5250 2    50   Input ~ 0
 ROW_R_1
-Text GLabel 9400 2750 2    50   Input ~ 0
+Text GLabel 9400 2250 2    50   Input ~ 0
 COL_L_5
-Text GLabel 9400 2650 2    50   Input ~ 0
-COL_L_4
-Text GLabel 9400 2450 2    50   Input ~ 0
-COL_L_2
 Text GLabel 9400 2350 2    50   Input ~ 0
+COL_L_4
+Text GLabel 9400 2550 2    50   Input ~ 0
+COL_L_2
+Text GLabel 9400 2650 2    50   Input ~ 0
 COL_L_1
 $Comp
 L Device:Rotary_Encoder_Switch SW37
 U 1 1 60D34E3D
-P 5950 7350
-F 0 "SW37" H 5950 7717 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 5950 7626 50  0000 C CNN
-F 2 "Encoder:RollerEncoder_Panasonic_EVQWGD001" H 5800 7510 50  0001 C CNN
-F 3 "~" H 5950 7610 50  0001 C CNN
-	1    5950 7350
+P 6850 1150
+F 0 "SW37" H 6850 1517 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 6850 1426 50  0000 C CNN
+F 2 "Encoder:RollerEncoder_Panasonic_EVQWGD001" H 6700 1310 50  0001 C CNN
+F 3 "~" H 6850 1410 50  0001 C CNN
+	1    6850 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Rotary_Encoder_Switch SW38
 U 1 1 60D37BA7
-P 6900 3900
-F 0 "SW38" H 6900 4267 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 6900 4176 50  0000 C CNN
-F 2 "Encoder:RollerEncoder_Panasonic_EVQWGD001" H 6750 4060 50  0001 C CNN
-F 3 "~" H 6900 4160 50  0001 C CNN
-	1    6900 3900
+P 9250 1150
+F 0 "SW38" H 9250 1517 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 9250 1426 50  0000 C CNN
+F 2 "Encoder:RollerEncoder_Panasonic_EVQWGD001" H 9100 1310 50  0001 C CNN
+F 3 "~" H 9250 1410 50  0001 C CNN
+	1    9250 1150
 	1    0    0    -1  
 $EndComp
 Text GLabel 4750 3900 2    50   Input ~ 0
-ENC_L_IN
+ENC_L_1_IN
 Text GLabel 5400 3800 2    50   Input ~ 0
-ENC_L_OUT
+ENC_L_1_OUT
 Wire Wire Line
 	5400 3800 5250 3800
 Connection ~ 5250 3800
@@ -1512,7 +1496,7 @@ Connection ~ 5250 6800
 Wire Wire Line
 	5250 6800 5350 6800
 Text GLabel 5350 6800 2    50   Input ~ 0
-ENC_R_OUT
+ENC_R_1_OUT
 $Comp
 L Device:D D36
 U 1 1 60540723
@@ -1524,75 +1508,191 @@ F 3 "~" H 5250 6950 50  0001 C CNN
 	1    5250 6950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 6400 7450 2    50   Input ~ 0
-ENC_R_OUT
+Text GLabel 7300 1250 2    50   Input ~ 0
+ENC_L_1_OUT
 Connection ~ 4650 6800
 Wire Wire Line
 	4650 6900 4650 6800
 Wire Wire Line
 	4750 6900 4650 6900
 Text GLabel 4750 6900 2    50   Input ~ 0
-ENC_R_IN
-Text GLabel 6400 7250 2    50   Input ~ 0
-ENC_R_IN
+ENC_R_1_IN
+Text GLabel 7300 1050 2    50   Input ~ 0
+ENC_L_1_IN
 Wire Wire Line
-	6250 7450 6400 7450
+	7150 1250 7300 1250
 Wire Wire Line
-	6250 7250 6400 7250
-Text GLabel 7350 4000 2    50   Input ~ 0
-ENC_L_OUT
-Text GLabel 7350 3800 2    50   Input ~ 0
-ENC_L_IN
+	7150 1050 7300 1050
+Text GLabel 9700 1250 2    50   Input ~ 0
+ENC_L_2_OUT
+Text GLabel 9700 1050 2    50   Input ~ 0
+ENC_L_2_IN
 Wire Wire Line
-	7350 3800 7200 3800
+	9700 1050 9550 1050
 Wire Wire Line
-	7200 4000 7350 4000
-Text GLabel 6500 3800 0    50   Input ~ 0
-ENC_L_A
-Text GLabel 7600 2950 0    50   Input ~ 0
-ENC_L_B
+	9550 1250 9700 1250
+Text GLabel 8850 1050 0    50   Input ~ 0
+ENC_L_A_2
+Text GLabel 7600 2750 0    50   Input ~ 0
+ENC_L_C_1
 Text GLabel 9400 2950 2    50   Input ~ 0
-ENC_L_C
+ENC_L_A_2
 Wire Wire Line
 	9400 2950 9200 2950
 Wire Wire Line
-	7800 2950 7600 2950
-Wire Wire Line
 	7600 2850 7800 2850
-Text GLabel 7600 2850 0    50   Input ~ 0
-ENC_L_A
-Text GLabel 6500 3900 0    50   Input ~ 0
-ENC_L_C
-Text GLabel 6500 4000 0    50   Input ~ 0
-ENC_L_B
+Text GLabel 7600 2950 0    50   Input ~ 0
+ENC_L_A_1
+Text GLabel 8850 1150 0    50   Input ~ 0
+ENC_L_C_2
+Text GLabel 8850 1250 0    50   Input ~ 0
+ENC_L_B_2
 Wire Wire Line
-	6500 3800 6600 3800
+	8850 1050 8950 1050
 Wire Wire Line
-	6600 3900 6500 3900
+	8950 1150 8850 1150
 Wire Wire Line
-	6500 4000 6600 4000
-Text GLabel 5550 7250 0    50   Input ~ 0
-ENC_R_A
-Text GLabel 5550 7350 0    50   Input ~ 0
-ENC_R_C
-Text GLabel 5550 7450 0    50   Input ~ 0
-ENC_R_B
+	8850 1250 8950 1250
+Text GLabel 6450 1050 0    50   Input ~ 0
+ENC_L_A_1
+Text GLabel 6450 1150 0    50   Input ~ 0
+ENC_L_C_1
+Text GLabel 6450 1250 0    50   Input ~ 0
+ENC_L_B_1
 Wire Wire Line
-	5550 7250 5650 7250
+	6450 1050 6550 1050
 Wire Wire Line
-	5550 7350 5650 7350
-Text GLabel 7600 5850 0    50   Input ~ 0
-ENC_R_A
-Text GLabel 7600 5950 0    50   Input ~ 0
-ENC_R_B
+	6450 1150 6550 1150
 Text GLabel 9400 5950 2    50   Input ~ 0
-ENC_R_C
+ENC_R_C_1
+Wire Wire Line
+	6550 1250 6450 1250
+Wire Wire Line
+	7600 2250 7800 2250
+Wire Wire Line
+	7800 2350 7600 2350
+Text GLabel 9400 2750 2    50   Input ~ 0
+ENC_L_C_2
+Text GLabel 9400 2850 2    50   Input ~ 0
+ENC_L_B_2
+Wire Wire Line
+	9400 2850 9200 2850
+Text GLabel 7600 2850 0    50   Input ~ 0
+ENC_L_B_1
+Text GLabel 9400 5850 2    50   Input ~ 0
+ENC_R_B_1
+Text GLabel 9400 5750 2    50   Input ~ 0
+ENC_R_A_1
+NoConn ~ 7800 2650
+Wire Wire Line
+	7600 2950 7800 2950
+NoConn ~ 9200 5650
 Wire Wire Line
 	9200 5950 9400 5950
+Text GLabel 7600 5750 0    50   Input ~ 0
+ENC_R_A_2
+Text GLabel 7600 5850 0    50   Input ~ 0
+ENC_R_B_2
+Text GLabel 7600 5950 0    50   Input ~ 0
+ENC_R_C_2
+Wire Wire Line
+	7800 5750 7600 5750
 Wire Wire Line
 	7800 5850 7600 5850
 Wire Wire Line
 	7600 5950 7800 5950
 Wire Wire Line
-	5650 7450 5550 7450
+	7800 5650 7600 5650
+Wire Wire Line
+	7600 5550 7800 5550
+Wire Wire Line
+	7800 5350 7600 5350
+Wire Wire Line
+	7600 5250 7800 5250
+$Comp
+L Device:Rotary_Encoder_Switch SW39
+U 1 1 60EE55F1
+P 6900 4000
+F 0 "SW39" H 6900 4367 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 6900 4276 50  0000 C CNN
+F 2 "Encoder:RollerEncoder_Panasonic_EVQWGD001" H 6750 4160 50  0001 C CNN
+F 3 "~" H 6900 4260 50  0001 C CNN
+	1    6900 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7350 4100 2    50   Input ~ 0
+ENC_R_1_OUT
+Text GLabel 7350 3900 2    50   Input ~ 0
+ENC_R_1_IN
+Wire Wire Line
+	7200 4100 7350 4100
+Wire Wire Line
+	7200 3900 7350 3900
+Text GLabel 6500 3900 0    50   Input ~ 0
+ENC_R_A_1
+Text GLabel 6500 4000 0    50   Input ~ 0
+ENC_R_C_1
+Text GLabel 6500 4100 0    50   Input ~ 0
+ENC_R_B_1
+Wire Wire Line
+	6500 3900 6600 3900
+Wire Wire Line
+	6500 4000 6600 4000
+Wire Wire Line
+	6600 4100 6500 4100
+$Comp
+L Device:Rotary_Encoder_Switch SW40
+U 1 1 60EEC632
+P 8800 4000
+F 0 "SW40" H 8800 4367 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 8800 4276 50  0000 C CNN
+F 2 "Encoder:RollerEncoder_Panasonic_EVQWGD001" H 8650 4160 50  0001 C CNN
+F 3 "~" H 8800 4260 50  0001 C CNN
+	1    8800 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 9250 4100 2    50   Input ~ 0
+ENC_R_2_OUT
+Text GLabel 9250 3900 2    50   Input ~ 0
+ENC_R_2_IN
+Wire Wire Line
+	9100 4100 9250 4100
+Wire Wire Line
+	9100 3900 9250 3900
+Text GLabel 8400 3900 0    50   Input ~ 0
+ENC_R_A_2
+Text GLabel 8400 4000 0    50   Input ~ 0
+ENC_R_C_2
+Text GLabel 8400 4100 0    50   Input ~ 0
+ENC_R_B_2
+Wire Wire Line
+	8400 3900 8500 3900
+Wire Wire Line
+	8400 4000 8500 4000
+Wire Wire Line
+	8500 4100 8400 4100
+Text GLabel 3500 3950 0    50   Input ~ 0
+ENC_L_2_OUT
+Text GLabel 3050 3800 0    50   Input ~ 0
+ENC_L_2_IN
+Wire Wire Line
+	3500 3950 3600 3950
+Wire Wire Line
+	3600 3950 3600 3800
+Wire Wire Line
+	3600 3800 3650 3800
+Connection ~ 3650 3800
+Text GLabel 3550 6950 0    50   Input ~ 0
+ENC_R_2_OUT
+Text GLabel 3050 6800 0    50   Input ~ 0
+ENC_R_2_IN
+Wire Wire Line
+	3550 6950 3550 6800
+Wire Wire Line
+	3550 6800 3650 6800
+Connection ~ 3650 6800
+Wire Wire Line
+	9400 5250 9200 5250
+Wire Wire Line
+	9200 2250 9400 2250
 $EndSCHEMATC
